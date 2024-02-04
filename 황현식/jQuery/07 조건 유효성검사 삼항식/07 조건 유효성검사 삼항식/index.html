@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="ex1">
+    <p>1. 버튼을 클릭하고 성인여부를 입력하세요</p>
+    <p>
+      <input type="number">
+      <button>결과확인</button>
+    </p>
+    <p class="print">결과출력</p>
+  </div>
+
+  <div class="ex2">
+    <p>2. 'two'에 해당하는 숫자를 입력하세요</p>
+    <input type="text">
+    <button>결과확인</button>
+    <p class="print">결과출력</p>
+  </div>
+  <hr>
+
+  <form action="ex3">
+    <p>3. 숫자 두개를 입력후 더하기 결과를 확인</p>
+    <input type="number" required> +
+    <input type="number" required>
+    <button></button>
+    <p class="print"></p>
+  </form>
+  <hr>
+
+  <form class="ex4">
+    <p>4. 상품과 수량을 선택하면 가격이 출력돼요</p>
+    <p>
+    <select required>
+      <option value="">상품을 선택하세요</option>
+      <option value="1000">과자</option>
+      <option value="2000">음료수</option>
+      <option value="2000">주류</option>
+    </select>
+    </p>
+    <p>
+<input type="number" min="1" max="10">개 <!-- MIN은 최소 한개이상 -->
+    </p>
+    <p>
+      <input type="radio" name="age" value="adult" required> 성인
+      <input type="radio" name="age" value="child" required> 미성년자
+    </p>
+
+    <button>가격확인</button>
+    <p class="print">가격출력</p>
+  </form>
+<hr>
+
+<form class="ex5">
+<p>5. 더하기 문제 (삼항식)</p>
+<p>
+  <b class="num1-1">?</b> +  <!-- 0~9 -->
+  <b class="num1-1">?</b> =  <!-- 0~9 -->
+<input number="num1" type="number" required>
+</p>
+<p>
+  <b class="num2-1">?</b> + <!-- 0~9 -->
+  <b class="num2-1">?</b> = <!-- 0~9 -->
+<input number="num2" type="number" required>
+</p>
+<button>결과확인</button>
+<p class="result">결과출력</p>
+</form>
+
+<hr>
+
+<form class="ex6">
+<p>6.계산기 (0으로 나누기를 할경우 경고창 출력)</p>
+<select class="num1">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+</select>
+
+<select class="operation">
+  <option>더하기</option>
+  <option>빼기</option>
+  <option>곱하기</option>
+  <option>나누기</option>
+</select>
+
+<select class="num2">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+</select>
+
+</form>
+=
+<button>결과보기</button>
+<p class="print">결과출력</p>
+</body>
+</html>

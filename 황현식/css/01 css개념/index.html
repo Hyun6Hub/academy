@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    h1 {
+      color: red;
+    }
+
+    span {
+      color: green;
+    }
+
+    .s {
+      color: blue;
+
+    }
+#id1{
+  color:yellow;
+}
+    section {
+      background: yellow;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>c<span>s</span><span class="s">s</span>기초</h1>
+    Cacsading Style Sheet
+    <hr>
+    <section>
+      <h2 class="s"> css의 특징</h2>
+      <ul>
+        <li>웹문서를 시각적으로 디자인하느 목적의 언어</li>
+        <li>우선순위가 존재하는 디자인 양식</li>
+        <li>선택자{프로퍼티:값}</li>
+      </ul>
+    </section>
+    <hr>
+    <section>
+      <h2> 선택자(selector)</h2>
+      <article>
+        <h3>타입선택자</h3>
+        <ul>
+          <li>문법: 태그네임{프로퍼티:값;프로퍼티2:값}</li>
+          <li>자식선택자가 상위우선순위를 가진다</li>
+          <li>선택자별로 다양한 디자인 적용이 불가능하다</li>
+        </ul>
+      </article>
+    </section>
+    <article>
+      <h3>class선택자(클래스선택자)</h3>
+      <ul>
+        <li>문법: .클래스이름{프로퍼티:값}</li>
+        <li>타입선택자보다 상위우선순위를 가진다</li>
+        <li>선택자별로 다양한 디자인 적용이 불가능하다</li>
+        <li>중복호출이 가능(통일성을 유지한 디자인설계와, 유지보수가 용이함)</li>
+      </ul>
+    </article>
+    <article>
+      <h3>id선택자</h3>
+      <ul>
+        <li>문법: #아이디이름{프로퍼티:값}</li>
+        <li>클래스선택자보다 상위우선순위를 가진다</li>
+
+        <li>중복호출이 불가능(css설계목적이 아닌 html문법을 준수하기 위해 사용)</li>
+    </article>
+    <article>
+      <h3>인라인스타일</h3>
+      <ul>
+        <li>엘리먼트의 <span style="color:red; background-color: blue;">스타일 속성</span>을 추가후 프로퍼티와 값을 추가</li>
+      <li>스크립트를 이용해서 css를 동적으로 제어하는데 사용됨</li>
+      <li>최상위 우선순위를 가진다</li>
+      </ul>
+    </article>
+    </section>
+
+  </main>
+</body>
+
+</html>

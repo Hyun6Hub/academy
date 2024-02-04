@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script>
+  /* 
+  parseInt() : 문자를 숫자(정수)로 전환하는 명령어
+  parseInt('1가나다') -> 1
+  parseInt('1.123') -> 1  정수니까 소수점 땜
+  parseInt('가나다1') -> NaN
+  parseInt('1+2.1') 12.1 정수로바꾸면 12
+  */
+  var num1 = parseInt( prompt ('1번째 숫자를 입력하세요')) //2
+  var num2 = parseInt( prompt ('2번째 숫자를 입력하세요')) //3
+  var sum = num1 + num2 //parseInt(num1 + num2)
+  var minus = num1 - num2
+  alert(`더하기는 ${sum}, 빼기는 ${minus}`) //더하기는5, 빼기는 -1
+
+  //함수뒤에는 () 다 pareseInt ( prompt () )
+
+</script>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>다양한 선택자</h1>
+    <section class="section1">
+      <h3>tag.class"(컴바인선택자)</h3>
+      <div class="box">div</div>
+      <span class="box">span</span>
+      <b class="box box1" id="b"> </b>
+    </section>
+
+    <hr>
+
+    <section class="section2">
+      <h3>*(전체선택자)</h3>
+      <div class="box">
+        <a href="">a</a>
+        <b>b</b>
+        <i>i</i>
+        <small>small</small>
+      </div>
+
+      <div>
+        <p href="#">a</a>
+          <b>b</b>
+          <i>i</i>
+          <small>small</small>
+      </div>
+
+      <div class="box">
+        <a href="#">a</a>
+        <b>b</b>
+        <i>i</i>
+        <small>small</small>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <section class="section3">
+      <h3>형제선택자(인접형제선택자, 형제선택자)</h3>
+      <div class="box1">
+        <b>이름</b><span>홍길동</span>,
+        <b>성별</b><em>남자</em>,
+        <b>연락처</b><i>010-0000-0000</i>,
+      </div>
+
+      <div class="box2">
+        <div class="box">
+          <b>b</b> <i>i</i> <a href="">a</a>
+        </div>
+        <div>
+          <b>b</b> <i>i</i> <a href="">a</a>
+        </div>
+        <div>
+          <b>b</b> <i>i</i> <a href="">a</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="section4">
+      <h3>first-child, first-of-type</h3>
+      <div class="box1">
+        <b>b</b>
+        <b>b</b>
+        <b>b</b>
+      </div>
+      <div class="box2">
+        <i>i</i>
+        <b>b</b>
+        <b>b</b>
+      </div>
+      <div>
+        <b>b</b>
+        <b>b</b>
+        <b>b</b>
+        <b>b</b>
+        <b>b</b>
+      </div>
+
+    </section>
+
+    <div class="box3">
+      <div>
+        <i>i</i><b>b</b><a>a</a>
+      </div>
+      <div>
+        <b>b</b><i>i</i><a>a</a>
+      </div>
+      <div>
+        <a>a</a><i>i</i><b>b</b>
+      </div>
+  </main>
+</body>
+
+</html>

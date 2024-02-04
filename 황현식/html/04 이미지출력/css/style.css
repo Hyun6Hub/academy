@@ -1,0 +1,64 @@
+.naver1,
+.naver2 {
+  border: 4px solid red;
+  width: 100px;
+  background-color: yellow;
+  height: 100px;
+}
+
+.naver1 {
+  object-fit: cover;
+}
+
+.naver2 {
+  object-fit: contain;
+}
+
+.facebook {
+  display: block;
+  height: 50px;
+  width: 100px;
+  background-image: url(../img/facebook.jpg);
+}
+
+.facebook:hover {
+  background-image: url(../img/facebook_over.png);
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.box1 {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center
+}
+
+.box2 {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: repeat-x;
+  background-position: 0
+
+}
+
+.box3 {
+  background-image: url(../img/bg2.jpg), url(../img/bg2.jpg), url(../img/bg2.jpg), url(../img/bg2.jpg);
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-position: 0 0, right 0, 0 bottom, left 0;
+
+}
+
+.box4 {
+  width: 300px;
+  height: 200px;
+  border: 3px double #000;
+  background-image: url(../img/spriteimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+
+    $(document).ready(function () { /* ex1 */
+      $('.ex1 .btn').click(function () {
+        alert('hello world')
+      })//click
+    })//ready
+
+
+    $(document).ready(function () { /* ex2 */
+      var num1; var num2
+
+      $('.ex2 .btn1').click(function () {
+        num1 = parseInt(prompt('첫번째숫자를 입력하세요'))
+      })
+
+      $('.ex2 .btn2').click(function () {
+        num2 = parseInt(prompt('두번째숫자를 입력하세요'))
+      })
+
+
+      $('.ex2 .btn3').click(function () {
+        alert(`${num1}+${num2}=${num1 + num2}`) // 3 + 2 = 5
+      })
+
+    })//ready
+
+    $(document).ready(function () {                                      /* ex3 */
+      $('.ex3 button').click(function () {                      
+        var num1 = parseInt($('.ex3 .num1').val())
+        var num2 = parseInt($('.ex3 .num2').val())
+        var result = num1 + num2
+        $('.ex3 .print').html(result)
+        console.log(num1, num2, result);
+      })
+    })
+
+
+    $(document).ready(function () { /* ex4 */
+      $('.ex4 button').click(function () {
+        var num1 = ($('.ex4 .num1').val())//'1'
+        var num2 = ($('.ex4 .num2').val())//'2'
+        var num3 = ($('.ex4 .num3').val())//'3'
+        var num4 = ($('.ex4 .num4').val())//'4'
+
+        var result = parseInt(num1 + num2) + parseInt(num3 + num4)// parseInt('12') + parseInt('34')
+        $('.ex4 .print').html(result)
+        console.log(num1, num2, num3, num4, result);
+      })
+
+    })
+
+
+    $(document).ready(function () { /* ex5 */
+      $('.ex5 button').click(function () {
+        var num1 = parseInt($('.ex5 .num1').val())
+        var num2 = parseInt($('.ex5 .num2').val())
+        var division = parseInt(num1 / num2)
+        var result = num1 - num2 * division
+        $('.ex5 .print').html(result)
+  
+
+      })
+
+    })
+
+    /* 
+    10 % 4
+    결과 = 10 / 4 -> 2.5
+    소수점버린결과->2
+    10 - 4 *2
+    */
+
+    $(document).ready(function () {                  /* ex6 */
+      $('.ex6 button').click(function () {
+        var num1 = parseFloat($('.ex6 .num1').val()) * 10
+        var num2 = parseFloat($('.ex6 .num2').val()) * 10
+        var result = (num1 + num2) / 10
+        $('.ex6 .print').html(result)
+        console.log(num1, num2, result);
+      })
+    })
+
+    $(document).ready(function () {            /* ex7 */
+      $('.ex7 button').click(function () {
+        var r1 = parseInt($('.ex7 input').val()) //13
+        var r2 = parseInt(r1 * .2)               //2.6-> 2
+        var r3 = r1 - r2 //13-2
+        $('.ex7 .print').html(r3)
+      })
+    })
+
+
+
+    $(document).ready(function () {
+      $('.ex8 button').click(function () {
+        var 컨테이너넓이 = parseInt($('.ex8 .num1').val()) //컨테이너 넓이 1000
+        var 그리드갯수 =  parseInt($('.ex8 .num2').val()) //그리드갯수 4
+        var 그리드넓이 = parseInt($('.ex8 .num3').val())//그리드넓이 200
+        var 총여백 = 컨테이너넓이 - 그리드갯수 * 그리드넓이 // 2000
+        var 여백한개 = 총여백  / (그리드갯수 + 1)
+$('.ex8 .print'). html(여백한개)
+        
+      })
+    })
+
+
+
+
+  </script>
+</head>
+
+<body>
+  <div class="ex1">
+    <p>1. 버튼을 클릭할때알람창이 실행됩니다</p>
+    <button class="btn">버튼</button>
+  </div>
+  <hr>
+
+  <div class="ex2">
+    <p> 2. 버튼을 클릭하고 숫자를 입력후 결과를 확인하세요</p>
+    <button class="btn1">숫자1</button>
+    <button class="btn2">숫자2</button>
+    <button class="btn3">결과</button>
+  </div>
+
+  <hr>
+
+  <div class="ex3">
+    <p>3. 더하기 앱</p>
+    <input class="num1" type="text"> +
+    <input class="num2" type="text"> =
+    <button>결과확인</button>
+
+    <p class="print">결과출력</p>
+  </div>
+
+  <hr>
+
+  <div class="ex4">
+    <p>4. 더하기앱 </p>
+    <input class="num1" type="text" size="1" maxlength="1">
+    <input class="num2" type="text" size="1" maxlength="1">
+    +
+    <input class="num3" type="text" size="1" maxlength="1">
+    <input class="num4" type="text" size="1" maxlength="1">
+    <button>결과확인</button>
+    <p class="print">결과출력</p>
+
+  </div>
+
+  <hr>
+
+  <div class="ex5">
+    <p>5. 나머지 앱</p>
+
+    <input class="num1" type="text">/
+    <input class="num2" type="text">=
+    <button>결과확인</button>
+
+    <p class="print">결과출력</p>
+  </div>
+
+  <hr>
+  <div class="ex6">
+    <p>6. 더하기 앱</p>
+    <input class="num1" type="text">+
+    <input class="num2" type="text">=
+    <button>결과확인</button>
+
+    <p class="print">결과출력</p>
+
+  </div>
+
+  <hr>
+  <div class="ex7">
+    <p>7. 수당 출석일수 계산기</p>
+    단위개월일수 : <input type="text">
+    <button>결과확인</button>
+    <p class="print">결과출력</p>
+
+  </div>
+
+  <div class="ex8">
+    <p>8. 여백계산기</p>
+    <input class="num1" type="text" placeholder="컨테이너 넓이를 입력하세요">
+    <input class="num2" type="text" placeholder="그리드 갯수를 입력하세요">
+    <input class="num3" type="text" placeholder="그리드 넓이를 입력하세요">
+    <button>여백한개의 넓이</button>
+    <p class="output">결과출력</p>
+  </div>
+</body>
+
+</html>

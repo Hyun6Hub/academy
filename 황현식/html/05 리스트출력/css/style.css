@@ -1,0 +1,16 @@
+ul.movie-list li{ /* 띄어쓰면 그 안에있는 li다 */
+list-style: none;
+}
+
+/* : 가상클래스 ::엘리먼트 */
+
+ul.movie-list li::before{
+  content:"☆";
+}                                 /* css이용해 태그들어간거처럼 보이지 않는 태그*/
+
+
+
+ul.movie-list li::after{
+  content:"ㅇ";
+}     
+

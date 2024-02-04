@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('.btn1').click(function () {
+        var num1 = parseInt(prompt('첫번째 숫자를 입력하세요'))
+        var num2 = parseInt(prompt('두번째 숫자를 입력하세요'))
+        var result = num1 + num2
+        alert(`${num1}+${num2}=${result}`)
+      })
+
+
+
+
+      $('.btn2').click(function () {
+        var num1 = parseInt(prompt('첫번째 숫자를 입력하세요'))
+        var num2 = parseInt(prompt('두번째 숫자를 입력하세요'))
+        var result = num1 - num2
+        alert(`${num1}-${num2}=${result}`)
+      })
+
+
+      $('.btn3').click(function(){
+    var name = parseInt(prompt('이름을 입력하세요'))
+    var eng = parseInt(prompt('영어점수를 입력하세요'))
+    var kor = parseInt(prompt('국어점수를 입력세요'))
+    var math = parseInt(prompt('수학점수를 입력하세요'))
+    var total = parseInt(prompt('총점을 입력하세요'))
+    var avl = parseInt(prompt('평균을 입력하세요'))
+      })
+
+})
+
+  </script>
+</head>
+
+<body>
+  <button class="btn1">더하기버튼</button>
+  <button class="btn2">빼기버튼</button>
+  <button class="btn3">이름과 영어,수학,국어,점수를 입력하면 총점과 평균이 출력돼요</button>
+  /* 홍길동님의 총점은 120점 */
+
+</body>
+
+</html>

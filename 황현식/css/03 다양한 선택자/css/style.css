@@ -1,0 +1,55 @@
+.section1 div.box{        /* div.box 이름이 box인 div  사람.홍길동 */
+  color: red;
+}
+.section1 span.box{        /* */
+  color: blue;
+}
+
+.section1 .box.box1{           /* .box.box1 */
+  color: green;
+}       
+
+.section1 #b.box1.box{                 
+  color: green;
+}                                   /* section1 */
+
+
+
+.section2 div.box *{
+  border: 1px solid red;
+}
+
+.section2 div .box * {                   
+  border: 1px solid red;
+}                                 /* section2 */
+
+
+
+.section3 .box1 b + *{                /* 한개씩이니까 + */
+  text-decoration: underline;
+}
+
+
+.section3 .box2 .box + div > b ~ *{     /* ~ 뒤에 다걸려야함 */
+  color: red;
+}                                     /* section3 */
+
+
+
+.section4 .box1:first-child{           /* .section4:first-child 첫번째 자식인 섹션4 */
+  color: red;
+}
+
+.section4 .box2 b:first-of-type{         /* b:first-child 첫번째 b는 없다 */
+  color: red;                        /* 타입은 같은종류 태그 b태그만 따졌을때 첫번째 */
+}
+
+
+.section4 .box2 + div > b:first-child ~ b{  
+  color: red;
+}
+
+
+.section4 .box3 div:first-child ~ div > *:first-child ~ *  {    /* 첫번째 div의 동생먼저찾음 */
+  color: red;
+} 
