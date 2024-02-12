@@ -1,0 +1,134 @@
+h1 {
+    width: 500px;
+    background-color: yellow;
+}
+
+/* 박스들 오른쪽으로  */
+.box1 {
+    text-align: right;
+}
+
+.box1 span {
+    /* 글자들끼리 설정*/
+    /* span은 inline레벨이다 */
+    display: inline-block;
+    width: 100px;
+    background-color: yellow;
+    text-align: center;
+    /* 글자만 쓸수있다 */
+    vertical-align: top;
+    /* span의 부모에서 정렬해준다 */
+}
+
+/* 높이 따로준다 1, 2, 3*/
+/* 글자 중간으로 text-aglin center 글자 정렬하려면 글자 부모로해야함 */
+
+.box1 span:nth-child(1) {
+    height: 150px;
+    line-height: 150px;
+}
+
+.box1 span:nth-child(2) {
+    height: 100px;
+    line-height: 100px;
+}
+
+.box1 span:nth-child(3) {
+    height: 50px;
+    line-height: 50px;
+}
+
+
+.box2 {
+    text-align: center;
+}
+
+.box2 span {
+    display: inline-block;
+    vertical-align: bottom;
+    background-color: yellow;
+    width: 100px;
+
+}
+
+.box2 span:nth-child(1) {
+    height: 150px;
+    line-height: 150px;
+}
+
+.box2 span:nth-child(2) {
+    height: 100px;
+    line-height: 100px;
+}
+
+
+.box2 span:nth-child(3) {
+    height: 50px;
+    line-height: 50px;
+}
+
+.box3 {
+
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    margin-left: auto;
+    /* auto두개 중앙으로와라, 블럭에만 적용가능  */
+    margin-right: auto;
+    /* box3 옮기자 */
+    text-align: center;
+    /* box3안의 인라인블럭 스펜옮기자 */
+    line-height: 200px;
+    /* 글자못옮기니 박스가 내려감 */
+
+
+}
+
+.box3 span {
+    vertical-align: middle;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    line-height: 100px;
+}
+
+.box4 {
+    text-align: center;
+    /* 박스안 글자도 중앙으로 이동 */
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 400px;
+}
+
+.box4 div {
+    background-color: fuchsia;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+
+.box5{
+    text-align: center;
+}
+
+.box5 div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    background-color: indianred;
+}
+
+/* 블럭이면
+margin-left: auto;
+margin-right: auto; 이걸로옮김 
+
+인라인 블럭하면 ㅁ이란 글자가됨
+글자는 부모가 옮겨줌*/

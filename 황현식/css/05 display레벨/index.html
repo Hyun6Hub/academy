@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="./js/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+<main>
+  <h1>display레벨과 정렬</h1>
+  <p>display레벨에 의해서 화면 출력방식과 문법작성의 유효성이 결정된다</p>
+  <section>
+    <h2>display레벨의 종류</h2>
+  <article>
+    <h3>block</h3>
+    <ul>
+      <li>부모의 전체 넓이를 가지고 출력이된다</li>
+      <li>한줄을 통쨰로 차지한다</li>
+      <li>크기속성을 가질 수 있다</li>
+      <li>h1~h6,p,div,article, form, li, section, main 등</li>
+    </ul>
+  </article>
+  <article>
+    <h3>inline</h3>
+    <ul>
+      <li>줄내림이 되지 않는 요소들</li>
+      <li>크기속성 가질 수 없다</li>
+      <li>a, span, b ,em, smaill, i</li>
+      </li>
+    </ul>
+  </article>
+  <article>
+    <h3>inline-block</h3>
+  <ul>
+    <li>줄내림이 되지 않는 요소들</li>
+    <li>크기를 가질 수 있음</li>
+    <li>img, video, svg, canvas, input, button, textarea, select, ifreame</li>
+  </ul>
+  </article>
+  </section>
+  <hr>
+  <section>
+    <h2>display레벨과 정렬</h2>
+<ul>
+  <li>글자를 정렬할 떄는 글자의 부모요소에서 text-align속성을 이용한다</li>
+  <li>line-heihgt : 줄간격을 제어하는 속성, 요소의 높이와 동일하게 설정하면 수직중앙정렬 사용 할 수 있음</li>
+  <li>vertical-align: 글자들간의 상중하 위치를 정렬</li>
+  <li>block레벨의 수평정렬시 margin의 auto값을 적용한다
+    !주의 : margin의 auto값은 block레벨만 사용 가능
+  </li>
+</ul>
+<div class="box1">
+  <span>span1</span>
+  <span>span2</span>
+  <span>span3</span>
+</div>
+<hr>
+<div class="box2">
+  <span>span1</span>
+  <span>span2</span>
+  <span>span3</span>
+</div>
+<hr>
+<div class="box3">
+<span>span</span>
+</div>
+<hr>
+<div class="box4">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+<hr>
+<div class="box5">
+<div>1</div>
+<div>2</div>
+
+</div>
+
+</section>
+</main>
+</body>
+
+</html> 
+
+<!-- css상속 부모한테 지정하면 자식한테 넘어옴
+글자크기, 색깔, 글꼴, 간격, 정렬, 줄간격, 밑줄 -->
