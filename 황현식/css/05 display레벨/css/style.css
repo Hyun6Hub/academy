@@ -1,0 +1,134 @@
+h1 {
+  width: 500px;
+  background: yellow;
+}
+
+.box1 {               /* 위치 바꾸려면 박스 부모를 옮겨야됨 .box1 span의 부모는 .box1*/
+  text-align: right;        /* 노랑박스 3개 오른쪽으로 이동 안에서 글자가 움직인다 */
+}
+
+.box1 span {     /* 인라인 넓이x, 여기선 글자 못옮김 부모요소를 찾아야함-> .box1로  */
+  background-color: yellow;
+  display: inline-block;        /* 속성 바꿀수있음 인->블럭 */  
+  width: 100px;
+  text-align: center; /* 글자옮기려면 부모옮겨야됨, 자식의 우선순위가 더높다 부모는 오른쪽가지만 자식의 우선순위가 높으니 글자가 중앙, 글자의 수평정렬*/
+  vertical-align: top; /* 글자가든 박스(글자임)가 움직임 , 글자는 span이 아니라 박스까지가 글자 박스1은 전체고 박스1의 스펜을 찾아야함, 객체가 움직임 */
+}
+
+.box1 span:nth-child(1) {
+  height: 150px; /* y축 */
+  line-height: 150px;
+}
+
+.box1 span:nth-child(2) {
+  height: 100px;
+line-height: 100px;
+}
+
+.box1 span:nth-child(3) {
+  height: 50px;
+  line-height: 50px;  /* 한줄일때만 수직중앙정렬 가능 */
+}
+
+
+/* .box1 span의 text-aglin center를 지우면 노랑 박스안의 글자가 왼쪽오르 오지않고 오른쪽으로옴
+글자는 전부 자식이 유전자를 물려받으니까 .box1의 오른쪽영향받음, 다시 center를 적어주면 또 중앙으로옴 자식의 우선순위가 더 높으니*/
+
+
+.box2 {                                                       /* ex2 */
+  text-align: center;     /* 박스 중앙으로 옮김 */
+}
+
+
+.box2 span{
+  width: 100px;
+  background-color: red;
+  display: inline-block; /* 크기는 지정하되 아래쪽말고 옆쪽으로 배치 */
+  text-align: center; /* 글자중앙 */
+  vertical-align: bottom; /* 발바닥 맞춰라 */
+}
+
+.box2 span:nth-child(1) {
+  height: 150px;
+  line-height: 50px; /* 수직정렬 */
+  vertical-align: bottom;
+}
+
+.box2 span:nth-child(2) {
+  height: 100px;
+  line-height: 100px;
+  vertical-align: bottom;
+}
+
+.box2 span:nth-child(3) {
+  height: 50px;
+  line-height: 50px;
+  vertical-align: bottom;
+}
+
+.box3{
+width: 200px;
+height: 200px;
+background-color: orange;
+margin-left: auto ;
+margin-right: auto ;  /* 박스제어 */
+text-align: center;
+line-height: 200px;          /* 얼라인 라인 글자제어 */
+}
+
+.box3 span{
+vertical-align: middle; /* span옮겨야하니까 */
+display: inline-block;
+width: 100px;
+height: 100px;
+background-color: yellow;
+line-height: 100px;
+
+}
+
+
+
+/* 인라인블럭 글자가됨 글자는 부모가 옮김 */
+
+/* 블럭이면 오토로감 그럼 중앙이동
+블럭은 부모가 못움직임 블럭 수평되는데 수직안됨*/
+
+
+/* width: 200px;
+height: 200px;
+display: inline-block;
+background-color: orange; */
+/* 중앙으로 옮기려면 글자가 됐으니 혼자 중앙가는법 없음 div로 싸줌 */
+
+
+/* 마진 auto 블록레벨에만 적용 */
+/* left왼쪽으로 얼마나 떨어질까 auto 떨어질만큼 떨어져라 오른쪽으로가란뜻* 래프트 라이트 오토오토하면 중앙
+
+
+width: 200px;
+height: 200px;
+background-color: orange;
+margin-left: auto ;
+margin-right: auto ; 박스옮기기 중앙으로*/
+
+.box4{
+  text-align: center;
+  margin-left
+  margin-right
+background-color: yellow
+width: 400px;
+height: 400px;
+margin-left: 
+margin-right: 
+line-height: 400px;
+}
+.box4 div{
+  display: inline-block;
+  background-color: orange;
+  width: 100px;
+text-align: left;
+vertical-align: middle;
+line-height: 100px;
+
+}
+

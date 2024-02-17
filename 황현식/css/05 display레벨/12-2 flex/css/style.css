@@ -1,0 +1,84 @@
+.box1{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 30px auto;
+  padding-top: 10px;
+  border:1px solid black;
+}
+.box1 div{
+  width: 180px;
+  box-sizing: border-box;
+  margin-left: 15px ;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #999;
+}
+.box2{
+  display: flex;
+  width: 300px;
+  margin: 30px auto;
+  border:1px solid black;
+}
+.box2 div{
+  flex-grow:1;/* 기본값  0*/
+  border:1px solid red;
+}
+.box3{
+  display: flex;
+  width: 300px;
+  margin: 30px auto;
+  /* overflow: hidden; */
+  overflow: auto;
+  border:1px solid black;
+}
+.box3 div{
+  flex-shrink: 0;/* 1 */
+  width: 100px;
+  border:1px solid red;
+}
+.box4{
+  display: flex;
+  width: 300px;
+  margin: 30px auto;
+  border:5px solid #000;
+}
+
+.box4 div{
+  flex-grow: 1;
+  border:1px solid red;
+}
+
+.box4 div:last-child{
+  flex-basis: 100px;
+  /* min-width: 100px; */
+}
+
+.box5{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  padding: 10px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  border:1px solid #000;
+}
+.box5 div{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+
+.box5 div p{
+  margin: 10px 0;
+  flex-grow: 1;
+}
+
+.box5 *{
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  display: block;
+}

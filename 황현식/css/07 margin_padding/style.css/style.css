@@ -1,0 +1,61 @@
+.container1{
+width: 500px;
+
+margin: 0 auto;
+background-color: rgb(0, 255, 76);
+padding: 100px;
+box-sizing: border-box;
+}
+
+.container1 div{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+
+.container1 div:nth-child(2){
+  margin: 0 auto;
+}
+
+.container1 div:nth-child(3){
+  margin-left: auto;
+}
+
+
+.container2{
+  width: 500px;
+  background-color: #ccc;
+padding: 100px;
+box-sizing: border-box;
+margin: 0  auto;
+}
+
+.container2 > div{
+width: 300px;
+background-color: black;
+}
+
+.container2 >div >div{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+}
+
+.container2 >div >div :last-child{
+
+margin: 100px 0 0 auto;
+}
+
+
+.container3{
+  background-color: violet;
+  text-align: center;
+}
+
+.container3 span{
+  padding: 30px;
+  
+  background-color: chocolate;
+}
