@@ -1,0 +1,35 @@
+table{
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+td{
+  box-sizing: border-box;
+  border:1px solid #000;
+}
+.table1{
+  width: 300px;
+  margin:30px auto;
+}
+.table1 td{
+  width: 100px;
+  height: 50px;
+}
+
+.table2 {
+  width: 300px;
+  margin: 30px auto;
+  table-layout: auto;
+}
+
+.table2 td{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: center;
+}
+
+
+
+
+
+

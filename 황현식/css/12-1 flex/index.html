@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="./js/script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>flex</h1>
+    <section>
+      <h2>flex-direction</h2>
+      <ul>
+        <li>flex-direction:row (기본값)</li>
+        <li>자식요소들이 옆으로 배치된다</li>
+        <li>자식들이 부모요소의 높이와 동일하게 늘어남 (stretch)</li>
+      </ul>
+
+      <ul>
+        <li>flex-direction:coulmn</li>
+        <li>자식요소들이 상하로 배치된다</li>
+        <li>자식들이 부모요소의 높이와 동일하게 늘어남 (stretch)</li>
+      </ul>
+
+      <li>flex-direction:row-reverse <br>
+        자식요소들을 오른쪽 부터 배치</li>
+      <li>flex-direction:column-reverse <br>
+        자식요소들을 아래쪽 부터 배치</li>
+
+
+
+
+
+      <div class="box1">
+        <div>1<br>1<br>1</div>
+        <div>2</div>
+      </div>
+      <span>1</span>
+      <span>2</span>
+      <div class="box2">
+        <span>1</span>
+        <span>2</span>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>align-items:start</h2>
+      <li>자식요소들의 stretch속성이 없어진다</li>
+      <ul>
+        <li>flex-direction row일 경우 상단축</li>
+        <li>flex-direction coulmn일 경우 왼쪽축</li>
+        <li></li>
+      </ul>
+      <h2>align-item:center</h2>
+      <ul>
+        <li>flex-direction row일 경우 수평중앙축</li>
+        <li>flex-direction coulmn일 경우 수직중앙축</li>
+        <li></li>
+      </ul>
+
+      <h2>align-items:end</h2>
+      <ul>
+        <li>flex-direction row일 경우 하단축</li>
+        <li>flex-direction coulmn일 경우 오른쪽축</li>
+        <li></li>
+      </ul>
+
+
+      <div class="box3">
+        <div>1</div>
+        <div>2</div>
+      </div>
+      <div class="box4">
+        <div>1</div>
+        <div>2</div>
+      </div>
+
+    </section>
+    <hr>
+    <section>
+      <h2>justiy-content</h2>
+      <ul>
+        <li>자식요소의 위치를 설정</li>
+        <li>justiy-content : start (기본값)</li>
+        <ul>
+          <li>flex-direction row 왼쪽</li>
+          <li>flex-direction coulmn 왼쪽</li>
+        </ul>
+
+        <li>justiy-content : center</li>
+        <ul>
+          <li>flex-direction row 수평중앙</li>
+          <li>flex-direction coulmn 수직중앙</li>
+        </ul>
+
+        <li>justiy-content : end </li>
+        <ul>
+          <li>flex-direction row 오른쪽</li>
+          <li>flex-direction coulmn 아래쪽</li>
+        </ul>
+
+        <li>justiy-content : space between </li>
+        <ul>
+          <li>flex-direction row 좌우분할</li>
+          <li>flex-direction coulmn 상하분할</li>
+        </ul>
+
+
+      </ul>
+      <div class="box5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <hr>
+      <div class="box6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <hr>
+      <div class="box7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+
+
+
+    </section>
+  </main>
+
+</body>
+
+</html>

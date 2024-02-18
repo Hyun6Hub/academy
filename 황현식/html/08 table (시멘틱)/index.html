@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script> 
+  <script src="./js/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <h1>시멘틱 테이블</h1>
+    <ul>
+      <li>th요소는 데이터의 분류명을 의미, scope속성을 이용해서 스크린리더가 데이터를 읽어주는 방향을 결정</li>
+      <li>
+          scope 속성
+          <ul>
+            <li>scope="col" (하단 데이터를 읽기 전에 상단의 th를 읽는다)</li>
+            <li>scope="row" (오른쪽 데이터를 읽기 전에 왼쪽의 th를 읽는다)</li>
+            <li>scope="colgroup" (하단 th를 읽기 전에 상단의 th를 읽는다)</li>
+            <li>scope="rowgroup" (오른쪽 th를 읽기 전에 왼쪽의 th를 읽는다)</li>
+          </ul>
+      </li>
+      <li>tbody요소는 데이터의 범위 (반드시 포함해야 함)</li>
+      <li>thead는 th요소의 범위</li>
+      <li>tfoot은 데이터와 관련 없는 범위</li>
+    </ul>
+    <hr>
+    <table class="table1">
+      <caption>학생명단</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="no">번호</th>
+          <th scope="col" class="name">이름</th>
+          <th scope="col" class="age">나이</th>
+          <th scope="col" class="birth">생년월일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>홍길동</td>
+          <td>24</td>
+          <td>950213</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>김진형</td>
+          <td>48</td>
+          <td>760622</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">2024년 2월 작성</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr>
+    <table class="table2">
+      <caption>판매현황</caption>
+      <thead>
+        <tr>
+          <th scope="col" rowspan="2">구분</th>
+          <th scope="colgroup" colspan="3">상품종류</th>
+        </tr>
+        <tr>
+          <th scope="col">모바일</th>
+          <th scope="col">태블릿</th>
+          <th scope="col">랩탑</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1월</td>
+          <td>5만대</td>
+          <td>2만대</td>
+          <td>3만대</td>
+        </tr>
+        <tr>
+          <td>2월</td>
+          <td>1만대</td>
+          <td>4만대</td>
+          <td>3만대</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <table class="table4">
+      
+    </table>
+  </main>
+</body>
+</html>

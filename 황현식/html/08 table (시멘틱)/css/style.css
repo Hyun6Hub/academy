@@ -1,0 +1,57 @@
+table{
+  border-collapse: collapse;
+}
+
+table td{
+  box-sizing: border-box;
+}
+
+.table1{
+  width: 300px;
+  margin: 30px auto;
+}
+
+.table1 td,.table1 th{
+  height: 40px;
+  padding: 0 10px;
+  border:1px solid #000;
+  text-align: center;
+}
+
+.table1 .no{
+  width: 55px;
+}
+
+.table2{
+  width: 400px;
+  margin: 30px auto;
+}
+
+.table2 td,
+.table2 th{
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+  border:1px solid #000;
+}
+
+.table2 th{
+  background: #CCC;
+}
+
+.table2 td:first-child{
+  background: #EEE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
