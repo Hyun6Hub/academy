@@ -1,0 +1,15 @@
+.hobbys label:first-child{
+  color:red;
+}
+
+.hobbys input{
+  display: none;
+}
+
+.hobbys input:checked + label{
+  background: yellow;
+  text-decoration: underline;
+}
+.greet  *{
+  vertical-align: top;
+}

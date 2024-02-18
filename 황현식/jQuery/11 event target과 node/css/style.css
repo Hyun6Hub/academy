@@ -1,0 +1,12 @@
+.box{
+  display: inline-block;
+  padding: 20px;
+  border:1px solid #000;
+  background: #FFF;
+}
+.ex7 input{
+  width: 70px;
+}
+.ex7 button{
+  display: none;
+}

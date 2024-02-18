@@ -1,0 +1,29 @@
+.container{
+  width: 670px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  padding: 30px;
+  background: #000;
+}
+
+.container > div{
+  width: 290px;
+  box-sizing: border-box;
+  padding: 30px;
+  background: red;
+}
+
+.container > div:last-child{
+  margin: 30px 0 0 auto;
+}
+
+.container > div > div{
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+.container > div > div:nth-child(2){
+  margin-top: 30px;
+  margin-left: auto;
+}

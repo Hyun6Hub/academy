@@ -1,0 +1,68 @@
+div{
+  background: #FF0;
+}
+
+span{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color:#FFF;
+  background: #000;
+}
+.ex1{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ex1 span{
+  display: block;
+  margin-left: auto;
+}
+
+.ex2{
+  text-align: right;
+}
+.ex2 span{
+  display: inline-block;
+}
+
+.ex3 {
+  text-align: center;
+}
+.ex3 span{
+  display: inline-block;
+}
+
+.ex4 {
+  
+}
+.ex4 span{
+  display: block;  
+  margin-left: auto;
+}
+.ex4 span:first-child{
+  margin-right: auto;
+}
+
+.ex5 span{
+  display: block;
+}
+
+.ex5 span:nth-child(even){
+  margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
