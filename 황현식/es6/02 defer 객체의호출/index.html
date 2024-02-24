@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+  <h3>parsing과 loading event</h3>
+  <ul>
+    <li>
+      <p>parsing 종료시점</p>
+      document.addEventListener('DOMContentLoaded', function(){})
+    </li>
+    <li>
+      <p>html 자원이 모두 다운로드 된 시점 </p>
+      window.addEventListener('load', function(){})
+    </li>
+    <li>
+      <p>script의 defer 속성</p>
+      DOMContentLoaded이벤트를 대체하는 속성
+    </li>
+  </ul>
+  <hr>
+
+  <h3>엘리먼트 호출</h3>
+  <ul>
+    <li>
+      <b>getElement</b>
+      <ul>
+        <li>document.getElementByTagName('태그이름'): 배열을 반환</li>
+        <li>document.getElementByClassName('클래스이름'): 배열을 반환</li>
+        <li>document.getElementById('아이디이름'): 해당 아이디 요소 반환</li>
+      </ul>
+    </li>
+    <li>
+      <b>query</b>
+      <ul>
+        <li>document.querySelector('css 선택자'): 첫번째 요소 한개를 반환</li>
+        <li>document.querySelectorAll('css 선택자'): 모든 요소를 배열로 반환</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
