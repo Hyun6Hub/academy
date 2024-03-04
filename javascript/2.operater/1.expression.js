@@ -22,15 +22,16 @@ if (fruit === "apple") {
   console.log("해당 과일 없음!!");
 }
 
-// 임의의 숫자를 입력받아... 짝수면 빨강사과, 홀수면 초록사과
+// 임의의 숫자를 입력받아... 짝수면 초록사과, 홀수면 빨간사과
 // if ~ else, 삼항 연산자
 let number = 11;
 // if (number % 2 === 0) {
 if (!(number % 2)) {
-  console.log("🍎");
+  console.log("🍎");   // 참
 } else {
-  console.log("🍏");
+  console.log("🍏");  //거짓
 }
+// 2 짝수면 거짓 1홀수면 참
 
 let choiceMenu = "";
 !(number % 2) ? (choiceMenu = "🍎") : (choiceMenu = "🍏");

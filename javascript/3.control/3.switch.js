@@ -8,8 +8,11 @@
 // }
 
 // 0: 월요일, 1: 화요일 ..  6: 일요일
-let day = 6;
-let dayName = "";
+
+/* if안에 선언하면 못찾음 그래서 if문 밖에 변수선언 */
+
+let day = 3;
+let dayName = "";  //
 if (day === 0) {
   dayName = "월요일";
 } else if (day === 1) {
