@@ -6,7 +6,7 @@ a = true;
 a = !!0;
 a = [1, 2, 3];
 a = 100;
-a = symbol();
+a = symbol();g
 
 let b = 10;
 console.log(typeof a);
