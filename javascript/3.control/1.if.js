@@ -11,7 +11,9 @@ let display = "";
 menu === "pizza" ? (display = "🍕") : (display = "🌭");
 console.log(display);
 
-let fruit = "mango"; // default '해당 과일 없음'
+console.log("------------------");
+
+let fruit = "apple"; // default '해당 과일 없음'
 if (fruit === "apple") {
   console.log("🍎");
 } else if (fruit === "orange") {
@@ -22,6 +24,8 @@ if (fruit === "apple") {
   console.log("해당 과일 없음!!");
 }
 
+console.log("------------------");
+
 // 임의의 숫자를 입력받아... 짝수면 빨강사과, 홀수면 초록사과
 // if ~ else, 삼항 연산자
 let number = 11;
@@ -31,6 +35,8 @@ if (!(number % 2)) {
 } else {
   console.log("🍏");
 }
+// 나머지 1은참 0은 거짓
+console.log("------------------");
 
 let choiceMenu = "";
 !(number % 2) ? (choiceMenu = "🍎") : (choiceMenu = "🍏");
