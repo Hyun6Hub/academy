@@ -15,3 +15,5 @@ console.log(choiceMenu);
 
 let emoji = !(number % 2) ? "🍎" : "🍏";
 console.log(emoji);
+
+// 홀수면 true , 짝수면 false
