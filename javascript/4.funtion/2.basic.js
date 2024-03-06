@@ -21,6 +21,6 @@ function calculator(num1, num2, op) {
   return result;
 }
 
-let result = calculator(100, 200, "+");
+let result = calculator(100, 200, "*");
 console.log(`호출한 함수결과값 : ${result}`);
 console.log(`호출한 함수결과값 : ${add(100, 100)}`);
