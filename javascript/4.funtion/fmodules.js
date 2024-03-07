@@ -49,3 +49,4 @@ export function gugudan() {
     console.log(output);
   }
 }
+g;
