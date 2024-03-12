@@ -72,4 +72,4 @@ console.log(array1.length);   // 2
 console.log(array1.length-1); // 0, 1
 
 let array6 = [1, 2, '홍길동'];
-console.log(array6);
+console.log(array6);   
