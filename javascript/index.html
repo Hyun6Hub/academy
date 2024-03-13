@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="5.quiz.js"></script>
+    <script type="module" src="calculator.js"></script>
   </head>
-  <body><script src="./3.control/2.quiz.js"></script></body>
-</html>
+  <body>
+    <ul>
+      <li>
+        <label>숫자1</label>
+        <input type="text" name="number1" id="number1" placeholder="number1" />
+      </li>
+      <li>
+        <label>숫자2</label>
+        <input type="text" name="number2" id="number2" placeholder="number2" />
+      </li>
+      <li>
+        <button type="button" id="btn1">sum</button>
+      </li>
+    </ul>
 
+    <h3>Result : <span id="result"></span></h3>
+  </body>
+</html>
