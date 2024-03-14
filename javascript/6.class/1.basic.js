@@ -15,11 +15,13 @@ class Fruit {
   display = () => {
     console.log(`${this.name}, ${this.color}, ${this.emoji}`);
   };
-}
+} // new로 클래스를 만들면 constructor적고 그밑에 this 자동실행
 const apple = new Fruit("apple", "red", "🍎");
 const orange = new Fruit("orange", "orange", "🍊");
+
 apple.display();
 orange.display();
 
 console.log("1", apple);
 console.log("2", orange);
+//apple에 할당된 fruit 클래스를 출력함

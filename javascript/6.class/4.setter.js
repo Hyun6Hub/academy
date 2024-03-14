@@ -22,9 +22,33 @@ class Employee {
   set age(value) {
     this.#age = value;
   }
+
+  getName() {
+    return this.fullName;
+  }
+
+  get name() {
+    return this.fullName;
+  } //get 띄우고 name쓰면 출력할때 뒤에 () 생략가능
+
+  setName(value) {
+    this.fullName = value;
+  }
+
+  set name(value) {
+    this.fullName = value;
+  }
 }
 const hong = new Employee("길동", "홍", 20);
 console.log(hong.fullName);
+
+hong.getName();
+hong.name;
+
+hong.setName("new fullname");
+hong.setName = "new fullname";
+//괄호쓰기 귀찮을때, set 키워드를 사용하면 hong.name처럼 바로 사용할 수 있다(hong.setName같은 기능)
+
 hong.age = 30; // setter 호출
 // hong.age(30);
 console.log(hong.age);

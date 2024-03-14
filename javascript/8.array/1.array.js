@@ -22,19 +22,19 @@ Array 생성은 [], new 사용하고, CRUD 작업시에는 메소드 호출을 �
 
 //배열 생성
 let array1 = new Array(2); // 선언됨 메모리의 공간까지 만들어줌 선언과 메모리주소(할당), 대문자면 class다
-console.log(array1);
+console.log("1", array1);
 
 let array2 = new Array(1, 2, 3); // 선언과 메모리주소 할당, item 저장
-console.log(array2);
+console.log("2", array2);
 
 let array3 = [2, 4, 6]; //[] Array literal (배열 리터럴)
-console.log(array3);
+console.log("3", array3);
 
 let array4 = Array.from(array3);
 // let array3 = array4
-console.log(array4);
+console.log("4", array4);
 
-console.log(array3 === array4); //객체를 같이 바라봄  똑같은 메모리주소 공유 별도의 객체 만들어 사용하는가
+console.log("5", array3 === array4); //객체를 같이 바라봄  똑같은 메모리주소 공유 별도의 객체 만들어 사용하는가
 
 let array5 = Array.from({
   0: 2,
@@ -42,8 +42,11 @@ let array5 = Array.from({
   2: 6,
   length: 3,
 });
-console.log(array5); //2
-console.log(array1.length - 1); //0,1
+console.log("6", array5); //2
+console.log("7", array1.length - 1); //0,1
+// 2-1 은 1 [] 불필요
 
+new Array(2);
+// [undefined, undefined]
 let array6 = [1, 2, "홍길동"];
-console.log(array6);   
+console.log("8", array6);

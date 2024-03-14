@@ -6,13 +6,16 @@ class Fruit {
     this.emoji = emoji;
   }
   display = () => console.log(`${this.#name}, ${this.emoji}`);
+  // 함수내부니까 #써도 name출력됨 외부로 쓰면 출력안됨
 }
+
 const apple = new Fruit("apple", "🍎");
 // apple.name = '사과';  // 접근이 불가함
 apple.emoji = "🍏";
 apple.display();
 
-//-------------------
+console.log("----------------");
+
 class Student {
   #name;
   #age;
@@ -28,4 +31,4 @@ const hong = new Student("홍길동", "20", "서울");
 hong.name = "홍홍";
 hong.age = 30;
 hong.study();
-console.log(hong);
+console.log("1", hong);

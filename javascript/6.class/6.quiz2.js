@@ -34,8 +34,11 @@ class User {
 // 로그인 호출 함수
 function loginCheck() {
   // console.log(`로그인 버튼!!`);
-  const id = document.querySelector("#id").value; // test
-  const pass = document.querySelector("#pass").value; // 1234
-  const loginUser = new User(id, pass);
+  // const id = document.querySelector("#id").value; // test
+  // const pass = document.querySelector("#pass").value; // 1234
+  const loginUser = new User("my id", "my pass");
   console.log(loginUser.info);
 }
+
+loginCheck();
+//함수 선언해줘야됌

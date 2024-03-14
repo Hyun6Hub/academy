@@ -19,7 +19,6 @@
 // apple.display();
 // orange.display();
 
-/* this붙으면 메모리에 저장된거임 변수선언해서 넣어줘야함 이 스코프안에서만 씀 */
 // 생성자 함수 : 객체의 공통된 속성과 메소드들을 모아서 하나의 '틀' 생성
 function Fruit(name, color, emoji) {
   this.name = name;
@@ -30,11 +29,25 @@ function Fruit(name, color, emoji) {
     console.log(this.emoji);
   };
 }
+/* 
+const a = {
+  key : 'value'
+}
+
+a.name = 'asd'
+a.display = () => {}
+a.display()
+
+나중에 위처럼도 쓸수있다
+new fruit써도 되는데 apple에 할당함
+this가 fruit를 할당함
+display도 thsi에 할당한거
+*/
+
 const apple = new Fruit("apple", "red", "🍎");
 const orange = new Fruit("orange", "orange", "🍊");
 const peach = new Fruit("peach", "pink", "🍑");
+
 apple.display();
 orange.display();
 peach.display();
-/* new는 생성자 함수를 쓴거임 */
-/* 하나 골라서 출력 */

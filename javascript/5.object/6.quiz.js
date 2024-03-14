@@ -5,16 +5,16 @@
 function Animal(name, color, emoji) {
   this.name = name;
   this.color = color;
-  this.emoji = emoji;
+  this.emoji = emoji; //이름 색깔 안쓰고 이모지만씀
 
   this.display = () => {
-    console.log(this.emoji);
+    console.log(this.emoji); //display실행되고 이모지
   };
   this.eat = () => {
-    console.log(`${this.emoji} 먹는중..`);
+    console.log(`${this.emoji} 먹는중..`); //display실행되고 이모지, 먹는중
   };
   this.sleep = () => {
-    console.log(`${this.emoji} 자는중..`);
+    console.log(`${this.emoji} 자는중..`); //display실행되고 이모지, 자는중
   };
 }
 
@@ -33,5 +33,3 @@ cat.sleep();
 rabbit.display();
 rabbit.eat();
 rabbit.sleep();
-
-/* 셋다 출력 */
