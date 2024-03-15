@@ -22,15 +22,15 @@
 
 // 배열 생성
 let array1 = new Array(2); // 선언과 메모리주소 할당
-console.log(array1);
+console.log("1", array1);
 
 let array2 = new Array(1, 2, 3); // 선언과 메모리주소 할당, item 저장
-console.log(array2);
+console.log("2", array2);
 
 let array3 = [2, 4, 6]; // [] Array literal(배열 리터럴)
-console.log(array3);
+console.log("3", array3);
 
-let array4 = Array.from(array3);
+let array4 = Array.from(array3); //배열을 복사한다
 /* let array4_ = [
   {
     0: 2,
@@ -55,21 +55,23 @@ console.log('count -->', count);
 console.log('count2 -->', count2);
 
 ] */
-
+console.log("----------------------");
 // let array4 = array3;
-console.log(array4);
-console.log(array3 === array4);
+console.log("4", array4);
+console.log("5", array3 === array4);
 
 let array5 = Array.from({
   0: 2,
   1: 4,
   2: 6,
   length: 3,
-});
-console.log(array5);
+}); // 객체넘길땐 index(0,1,2)넣거나 length 넣으면 만들수있다
+// 객체로 2,4,6 출력하려면 index(0,1,2) 작성
 
-console.log(array1.length); // 2
-console.log(array1.length - 1); // 0, 1
+console.log("6", array5);
+
+console.log("7", array1.length); // 2
+console.log("8", array1.length - 1); // 0, 1
 
 let array6 = [1, 2, "홍길동"];
-console.log(array6);
+console.log("9", array6);

@@ -8,16 +8,16 @@
 const fruitsList = new Map();
 
 // 추가
-fruitsList.set('apple', '🍎');
-console.log(fruitsList);
+fruitsList.set("apple", "🍎"); // set은 key, value
+console.log("1", fruitsList);
 
 // 찾기
-console.log(fruitsList.get('apple'));
+console.log("2", fruitsList.get("apple"));
 
 // 존재확인
-console.log(fruitsList.has('orange'));
+console.log("3", fruitsList.has("orange"));
 
-// 삭제 
-fruitsList.delete('apple');
+// 삭제
+fruitsList.delete("apple");
 
-console.log(fruitsList);
+console.log("4", fruitsList);

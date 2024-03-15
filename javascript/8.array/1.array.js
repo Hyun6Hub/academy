@@ -21,7 +21,7 @@ Array 생성은 [], new 사용하고, CRUD 작업시에는 메소드 호출을 �
 */
 
 //배열 생성
-let array1 = new Array(2); // 선언됨 메모리의 공간까지 만들어줌 선언과 메모리주소(할당), 대문자면 class다
+let array1 = new Array(3); // 선언됨 메모리의 공간까지 만들어줌 선언과 메모리주소(할당), 대문자면 class다
 console.log("1", array1);
 
 let array2 = new Array(1, 2, 3); // 선언과 메모리주소 할당, item 저장

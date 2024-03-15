@@ -16,6 +16,8 @@ const arr1 = [1, 2, 3];
 const arr2 = [5, 6, 7];
 console.log([...arr1, 4, ...arr2]);
 
+console.log("-------------------------");
+
 function getName() {
   return { name: "홍길동", age: 20, address: "서울" };
 }
