@@ -43,7 +43,7 @@ function initForm() {
         case "sum":
           resultOperation = sum(number1, number2);
           break;
-        case "min":
+        case "sub":
           resultOperation = sub(number1, number2);
           break;
         case "mul":
