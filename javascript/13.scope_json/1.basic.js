@@ -8,24 +8,22 @@
   }
 */
 {
-  var a = 10;
+  var a = 10; //전역 스코프
   const b = 20;
-  console.log('a', a);  // 1
-  console.log('b', b);  // 1
+  console.log("a", a); // 1
+  console.log("b", b); // 1
 
   {
     var a = 100;
     const b = 200;
-    console.log('aa', a); // 2
-    console.log('bb', b); // 2
+    console.log("aa", a); // 2
+    console.log("bb", b); // 2
   }
 
-  console.log('aaa', a);  // 3
-  console.log('bbb', b);  // 3
+  console.log("aaa", a); // 3 var a로 인해 변경된값 출력
+  console.log("bbb", b); // 3
 
-  for(let a = 1; a <6; a++) {
+  for (let a = 1; a < 6; a++) {
     console.log(a);
   }
-
 }
-

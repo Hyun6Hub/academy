@@ -29,7 +29,6 @@ console.log("4", getValue(person, "address"));
 
 updateValue(person, "address", "부산");
 
-deleteValue(person, "address");  //키로 설정해서 값을 넣음 adress지우면 키밸류값 지워짐  //지우면 터미널에서 부산나옴 딜리트밸류가 업데이트부산 지워줌
+deleteValue(person, "address"); //키로 설정해서 값을 넣음 adress지우면 키밸류값 지워짐  //지우면 터미널에서 부산나옴 딜리트밸류가 업데이트부산 지워줌
 
-console.log("5", person); //오브젝트에 키를 등록해서 값을 넣는다  
-
+console.log("5", person); //오브젝트에 키를 등록해서 값을 넣는다
