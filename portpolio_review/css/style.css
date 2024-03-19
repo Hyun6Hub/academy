@@ -73,7 +73,7 @@ Header
   align-items: center;
 }
 
-.header__logo {
+.header.logo {
   display: flex;
   align-items: center;
   gap: 18px;
