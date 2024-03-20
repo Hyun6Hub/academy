@@ -64,6 +64,7 @@ button:focus {
   outline: 1px solid var(--color-accent);
 }
 .max-container {
+  /* 각 섹션마다 적용함 header footer빼고 */
   max-width: var(--max-size-width);
   margin: auto;
   /* border: 1px solid red; */
@@ -173,7 +174,7 @@ button:focus {
 .majors {
   /* border: 1px solid green; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Front-end, Mobile, Back-end 정렬 */
   gap: 1rem;
   margin: 2.5rem 0;
 }
